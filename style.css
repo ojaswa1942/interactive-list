@@ -1,0 +1,72 @@
+body {
+	background-color: lightsteelblue;
+	font-family: courier;
+	box-sizing: border-box;
+	/*text-align: center;*/
+}
+
+h1 {
+	/*padding: 10px;*/
+	width: 100%;
+	text-align: center;
+	font-size: 55px;
+	text-decoration: underline;
+	text-underline-position: under;
+	/*text-decoration-style: wavy;*/
+	padding: 30px 0;
+}
+
+p {
+	text-align: center;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.getinput {
+	width: 50%;
+	/*border: 1px solid black;*/
+	margin: 50px auto;
+	text-align: center;
+}
+
+#userinput , #enter {
+	text-align: center;
+	font-size: 30px;
+	border: 1px solid grey;
+	
+}
+
+ul {
+	text-align: justify;
+	list-style: inside;
+	border: 1px solid black;
+	width:50%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+.done {
+  text-decoration: line-through;
+}
