@@ -1,8 +1,6 @@
 var input=document.querySelector("#input");
 var enter=document.querySelector("#enter");
 var ul=document.querySelector("ul");
-var list=document.querySelectorAll("li");
-var item=document.querySelector("li");
 
 function onClick() {
 	if(input.value.length>0)
@@ -27,6 +25,14 @@ function onEnter(event) {
 
 input.addEventListener("keypress",onEnter);
 enter.addEventListener("click",onClick);
-item.addEventListener("click", function(){
-	list.classList.toggle("done")
+
+//Click to strike
+ul.addEventListener("click", function(event){
+	event.target.classList.toggle("done")
 });
+
+
+//Adding delete button
+var but=document.createElement("button");
+but.appendChild(document.createTextNode("x"));
+but.classList.add("button");
