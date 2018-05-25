@@ -26,15 +26,6 @@ function onEnter(event) {
 
 }
 
-input.addEventListener("keypress",onEnter);
-enter.addEventListener("click",onClick);
-
-//Click to strike
-ul.addEventListener("click", function(event){
-	event.target.classList.toggle("done")
-});
-
-
 //Adding delete button
 function addDelButton(elementInConsideration){
 	var but=document.createElement("button");
@@ -49,6 +40,16 @@ function addEvent(elementInConsideration){
 		this.style.display="none";
 });
 }
+
+input.addEventListener("keypress",onEnter);
+enter.addEventListener("click",onClick);
+
+//Click to strike
+ul.addEventListener("click", function(event){
+	event.target.classList.toggle("done")
+});
+
+
 
 //Adding delete button to existing list
 for (var i = 0; i < list.length; i++) {
