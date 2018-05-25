@@ -49,3 +49,8 @@ function addEvent(elementInConsideration){
 		this.style.display="none";
 });
 }
+
+//Adding delete button to existing list
+for (var i = 0; i < list.length; i++) {
+	addDelButton(list[i]);
+}
