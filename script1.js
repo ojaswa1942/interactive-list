@@ -1,6 +1,7 @@
 var input=document.querySelector("#input");
 var enter=document.querySelector("#enter");
 var ul=document.querySelector("ul");
+var list=document.querySelectorAll("li");
 
 function onClick() {
 	if(input.value.length>0)
@@ -9,6 +10,7 @@ function onClick() {
 			li.appendChild(document.createTextNode(input.value));
 			ul.appendChild(li);
 			input.value="";
+			addDelButton(li);
 		}
 }
 
@@ -19,6 +21,7 @@ function onEnter(event) {
 			li.appendChild(document.createTextNode(input.value));
 			ul.appendChild(li);
 			input.value="";
+			addDelButton(li);
 		}
 
 }
@@ -33,6 +36,16 @@ ul.addEventListener("click", function(event){
 
 
 //Adding delete button
-var but=document.createElement("button");
-but.appendChild(document.createTextNode("x"));
-but.classList.add("button");
+function addDelButton(elementInConsideration){
+	var but=document.createElement("button");
+	but.appendChild(document.createTextNode("x"));
+	but.classList.add("button");
+	elementInConsideration.appendChild(but);
+	addEvent(elementInConsideration);
+}
+
+function addEvent(elementInConsideration){
+	elementInConsideration.addEventListener("click", function(){
+		this.style.display="none";
+});
+}
