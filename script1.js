@@ -35,21 +35,22 @@ function addDelButton(elementInConsideration){
 	addEvent(elementInConsideration);
 }
 
+//Adding event listener to added buttons
 function addEvent(elementInConsideration){
 	elementInConsideration.addEventListener("click", function(){
 		this.style.display="none";
 });
 }
 
+//event on input keypress
 input.addEventListener("keypress",onEnter);
+//event on input click
 enter.addEventListener("click",onClick);
 
 //Click to strike
 ul.addEventListener("click", function(event){
 	event.target.classList.toggle("done")
 });
-
-
 
 //Adding delete button to existing list
 for (var i = 0; i < list.length; i++) {
