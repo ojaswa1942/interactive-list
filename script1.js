@@ -2,6 +2,7 @@ var input=document.querySelector("#input");
 var enter=document.querySelector("#enter");
 var ul=document.querySelector("ul");
 var list=document.querySelectorAll("li");
+var item=document.querySelector("li");
 
 function onClick() {
 	if(input.value.length>0)
@@ -26,3 +27,6 @@ function onEnter(event) {
 
 input.addEventListener("keypress",onEnter);
 enter.addEventListener("click",onClick);
+item.addEventListener("click", function(){
+	list.classList.toggle("done")
+});
